@@ -5,7 +5,7 @@ Welcome to my security operations engineering journal. This repository serves as
 ## 🧪 Completed Practical Labs
 
 * 📊 **SOC Team Internals:** [SOC Metrics and Objectives](./labs/soc-metrics.md) — *In Progress*
-* 🛑 **Defensive Frameworks:** [Alert Triage Walkthrough](./labs/alert-triage.md) — *Completed*
+* 🛑 **Defensive Frameworks:** [Alert Triage Walkthrough](./labs/alert-triage.md) — *In Progress*
 * 🎯 **Core Tools:** Splunk & Elastic Stack Basics — *Upcoming*
 
 ## 🛠️ Technical Skill Stack
