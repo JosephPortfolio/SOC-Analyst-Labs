@@ -1,15 +1,21 @@
-# 🛡️ SOC Analyst Training & Incident Documentation
+# DC-01 Base Operating System & Network Setup
 
-Welcome to my security operations engineering journal. This repository serves as public, verifiable proof of my hands-on technical capabilities, log analysis, and defensive security workflows. 
+## Virtual Machine Specifications
+* **Operating System:** Windows Server (Base OS Deployment)
+* **MAC Address:** 08:00:27:C8:85:A6
 
-## 🧪 Completed Practical Labs
+## Network Configuration
+* **Hostname:** DC-01
+* **IP Address:** 10.0.2.10
+* **Subnet Mask:** 255.255.255.0
+* **Gateway:** 10.0.2.2
+* **DNS Server:** 127.0.0.1 (Loopback for Active Directory Services)
 
-* 📊 **SOC Team Internals:** [SOC Metrics and Objectives](./labs/soc-metrics.md) — *In Progress*
-* 🛑 **Defensive Frameworks:** [Alert Triage Walkthrough](./labs/alert-triage.md) — *Completed*
-* 🎯 **Core Tools:** Splunk & Elastic Stack Basics — *Upcoming*
+## Deployment Snapshot Strategy
+To ensure environment stability and roll-back capability during the Active Directory build, the following virtual machine snapshots were executed:
 
-## 🛠️ Technical Skill Stack
-
-* **SIEM & Log Analysis:** Splunk, Elastic Stack (ELK)
-* **Defensive Frameworks:** Pyramid of Pain, Cyber Kill Chain, Unified Kill Chain
-* **Endpoint Protection:** Introduction to EDR
+1. `Clean_Base_OS_Installed`
+   * **Description:** Fresh OS setup completed, hostname changed to DC-01, static network configuration verified, and permanent MAC address locked. No server roles added.
+2. `Pre_Domain_Promotion`
+   * **Description:** Active Directory Domain Services (AD DS) binaries successfully installed via Server Manager. System prepared and saved immediately prior to forest/domain creation.
+  
